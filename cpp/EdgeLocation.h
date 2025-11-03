@@ -1,5 +1,4 @@
 // Accurate subpixel edge location based on partial area effect
-// YangShuo
 // 2023-9-12
 #ifndef _EDGE_LOCATION_H_
 #define _EDGE_LOCATION_H_
@@ -45,25 +44,25 @@ namespace EdgeLocator
 
     // subpixelEdges(image, threshold, 'SmoothingIter', iter);
     ////////////////////////////////////////////////////////////////////////////////////////////////////
-    // ×¢ÊÍ£ºsubpixelEdges
-    // ´´½¨subpixelEdgesº¯Êı
-    //      image           -I      ÊäÈëÍ¼Ïñ
-    //      threshold       -I      ÊäÈëãĞÖµ
-    //      iter            -I      ÊäÈëµü´ú´ÎÊı
-    //      edges           -O      Êä³öÑÇÏñËØ±ßÔµĞÅÏ¢
+    // æ³¨é‡Šï¼šsubpixelEdges
+    // åˆ›å»ºsubpixelEdgeså‡½æ•°
+    //      image           -I      è¾“å…¥å›¾åƒ
+    //      threshold       -I      è¾“å…¥é˜ˆå€¼
+    //      iter            -I      è¾“å…¥è¿­ä»£æ¬¡æ•°
+    //      edges           -O      è¾“å‡ºäºšåƒç´ è¾¹ç¼˜ä¿¡æ¯
     //
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     int subpixelEdges(cv::Mat image, double threshold, int iter, std::vector<Edge>& edges);
 
     // finalDetectorIterN
     ////////////////////////////////////////////////////////////////////////////////////////////////////
-    // ×¢ÊÍ£ºfinalDetectorIterNÄÚÈİ
-    // ´´½¨finalDetectorIterNº¯Êı
-    //      F               -I      ÊäÈëÍ¼Ïñ
-    //      threshold       -I      ÊäÈëãĞÖµ
-    //      order           -I      ÊäÈë½×´Î
-    //      ep              -O      Êä³öÑÇÏñËØ±ßÔµĞÅÏ¢
-    //      I               -O      Êä³ö±ßÔµ¼ÆËãÔöÇ¿ºóÍ¼Ïñ
+    // æ³¨é‡Šï¼šfinalDetectorIterNå†…å®¹
+    // åˆ›å»ºfinalDetectorIterNå‡½æ•°
+    //      F               -I      è¾“å…¥å›¾åƒ
+    //      threshold       -I      è¾“å…¥é˜ˆå€¼
+    //      order           -I      è¾“å…¥é˜¶æ¬¡
+    //      ep              -O      è¾“å‡ºäºšåƒç´ è¾¹ç¼˜ä¿¡æ¯
+    //      I               -O      è¾“å‡ºè¾¹ç¼˜è®¡ç®—å¢å¼ºåå›¾åƒ
     //
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     int finalDetectorIterN(cv::Mat            F,
@@ -73,4 +72,5 @@ namespace EdgeLocator
                            cv::Mat           &I);
 }
 #endif
+
 
