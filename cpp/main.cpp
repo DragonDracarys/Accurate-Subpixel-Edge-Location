@@ -1,5 +1,4 @@
 // Accurate subpixel edge location based on partial area effect
-// YangShuo
 // 2023-9-12
 #include "OpencvLibrary.h"
 #include "EdgeLocation.h"
@@ -18,6 +17,7 @@ int main()
 
     return 0;
 }
+
 
 
 
